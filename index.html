@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Toggle -->
+        <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-content">
+                <h1 class="name">Shreyas</h1>
+                <p class="title">AI & Security</p>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I design and build systems that prioritize security, reliability, and real-world resilience. My
+                        work focuses on solving complex problems through practical and production-ready solutions rather
+                        than theoretical ideas.</p>
+                    <p>I operate at the intersection of AI, cybersecurity, and web development, creating tools that
+                        protect applications while enabling intelligent automation. From securing web platforms to
+                        integrating machine learning models, I focus on building systems that are both smart and safe.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>AI</h3>
+                        <ul>
+                            <li>Python, PyTorch, TensorFlow</li>
+                            <li>Hugging Face / Transformers, Prompt Engineering</li>
+                            <li>Natural Language Processing (NLP)</li>
+                            <li>Model deployment & monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cybersecurity</h3>
+                        <ul>
+                            <li>Penetration testing (Burp Suite, PortSwigger labs)</li>
+                            <li>Vulnerability assessment & secure code review</li>
+                            <li>Container & cloud security, RBAC, encryption</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React, Node.js, FastAPI</li>
+                            <li>REST API design, authentication & CORS</li>
+                            <li>SQL / NoSQL database design (Postgres, MongoDB)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Docker, Kubernetes (Kind for local dev)</li>
+                            <li>Render, Vercel, AWS basics</li>
+                            <li>Git, CI/CD pipelines, monitoring & logging</li>
+                            <li>Redis, Elasticsearch, PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+
+                <div class="project-card">
+                    <div class="project-flip-card">
+                        <div class="project-front">
+                            <h3>AI Prompt Injection Detector</h3>
+                            <div class="click-hint">Click to view details</div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-content">
+                                <h3>AI Prompt Injection Detector</h3>
+                                <p class="problem">AI systems can be manipulated via crafted prompts that change model
+                                    behavior or exfiltrate data.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <h4>What was built</h4>
+                                        <p>A real-time detection pipeline that inspects incoming prompts and flags
+                                            potential injection attempts before they reach production models.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Tech stack</h4>
+                                        <p>Python, FastAPI, Pydantic, Hugging Face-custom model, OpenAI API
+                                            integrations, PostgreSQL, Redis. Deployed on Render with health endpoints
+                                            and CORS-safe configuration.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Technical strength</h4>
+                                        <p>Multi-layered analysis combining pattern detection, semantic classification,
+                                            and behavioral heuristics to reduce false positives while catching
+                                            sophisticated injection techniques.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-flip-card">
+                        <div class="project-front">
+                            <h3>Incident / Vulnerability Tracker</h3>
+                            <div class="click-hint">Click to view details</div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-content">
+                                <h3>Incident / Vulnerability Tracker</h3>
+                                <p class="problem">Teams struggle to correlate security incidents and vulnerability
+                                    scans across services and environments.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <h4>What was built</h4>
+                                        <p>A centralized platform that aggregates security events, scan results, and
+                                            incident reports with automated correlation, prioritization, and triage
+                                            workflows.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Tech stack</h4>
+                                        <p>React, Node.js / Express, MongoDB, Elasticsearch, containerized with Docker
+                                            and designed to run on Kubernetes.</p>
+                                    </div>
+                                    <div class="detail-item">
+                                        <h4>Technical strength</h4>
+                                        <p>Defense-in-depth controls: encrypted storage, role-based access control,
+                                            audit logging, and automated remediation suggestions for common
+                                            vulnerabilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><strong>GitHub:</strong> <a href="https://github.com/Shreyascp-716">CLICK HERE</a></p>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <div class="footer-content">
+                    <p class="footer-name">Shreyas - AI & Security Engineer</p>
+                    <div class="footer-links">
+                        <a href="https://github.com/shreyas" target="_blank">GitHub</a>
+                    </div>
+                    <p class="footer-copy">© 2026. All rights reserved.</p>
+                </div>
+            </footer>
+            
+        </main>
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
