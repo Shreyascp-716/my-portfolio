@@ -7,5 +7,8 @@ Personal portfolio built using HTML, CSS, and JavaScript.
 - Projects section
 - Contact section
 
-## Live Demo
+## Demo
+![Demo](demo.gif)
+
+## Live 
 https://shreyascp-716.github.io/my-portfolio/
